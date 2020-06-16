@@ -410,4 +410,416 @@
 <script src="/js/main.js"></script>
 
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="main__header">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/Logo.png" class="logo" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="border__burger"> <i class="fa fa-bars burger__header" aria-hidden="true"></i>
+                    </div>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-item-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-item-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+        </div>
+    </div>
+    <div class="header__content">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <img src="/images/logo_content.png" class="logo__content" alt="">    
+                    <h1 class="header__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                    <div class="vertical__line"></div>
+                    <p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    <button class="btn__transparet">Download</button>
+                </div>
+                <div class="col-lg-5 ml-auto">
+                    <form class="header__content__form">
+                        <label for="name" class="form__label">Try Your <span class="yelow">FREE</span> Trial Today</label>
+                        <div><input type="name" class="form__name input__text" id="name" placeholder="Name"></div>
+                        <div><input type="email" class="form__email input__text" placeholder="Email"></div>
+                        <div class="pasword__conteiner"><input type="password" class="form__password input__text" placeholder="Password"> </div>
+                        <button type="submit" class="form__btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="social__media" id="social__media">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3 class="social__media__title">Social Media</h3>
+                <p class="social__media__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.</p>
+            </div>
+                <div class="col-lg-7 social__media__icon">
+                        <a href="#"><img src="/images/social-modia/SM__icon__1.png" class="social__media__link first__SML" alt=""></a>
+                        <a href="#"><img src="/images/social-modia/SM__icon__2.png" class="social__media__link" alt=""></a>
+                        <a href="#"><img src="/images/social-modia/SM__icon__3.png" class="social__media__link" alt=""></a>
+                        <a href="#"><img src="/images/social-modia/SM__icon__4.png" class="social__media__link" alt=""></a>
+                        <a href="#"><img src="/images/social-modia/SM__icon__5.png" class="social__media__link" alt=""></a>
+                        <a href="#"><img src="/images/social-modia/SM__icon__6.png" class="social__media__link" alt=""></a>
+                        <a href="#"><img src="/images/social-modia/SM__icon__7.png" class="social__media__link" alt=""></a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="tabs__section" id="tabs__section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="btn__tabs">
+                    <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link nav__btn active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                        <a class="nav-link nav__btn" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                        <a class="nav-link nav__btn" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                    <div class="tab-content tabs__content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        
+                            <h2 class="tabs__content__title">Tabs with Lorem ipsum dolor sit amet.</h2>  
+                            <p class="tabs__content__subtitle tabs__content__subtitle__pading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra dis parturient montes.</p>
+                            <p class="tabs__content__subtitle ">Lorem ipsum dolor sit amet, consectet bibendum laoreet.</p>
+                            <button class="btn__color">Download</button>
+                        
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                  
+                            <h2 class="tabs__content__title">Tabs with Lorem, ipsum.</h2>  
+                            <p class="tabs__content__subtitle tabs__content__subtitle__pading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacis natoque penatibus et magnis dis parturient montes.</p>
+                            <p class="tabs__content__subtitle">Lorem ipsum dolor adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            <button class="btn__color">Download</button>
+                        
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                  
+                            <h2 class="tabs__content__title">Tabs with Lorem ipsum dolor sit.</h2>  
+                            <p class="tabs__content__subtitle tabs__content__subtitle__pading">justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                            <p class="tabs__content__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod</p>
+                            <button class="btn__color">Download</button>
+                        
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="sub__list__section" id="sub__list__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="sub__list__img__left"><img src="/images/image_left_sub_list_u260.png" class="sub__left__img" alt=""></div>
+                </div>
+                <div class="col-lg-5 ml-auto">
+                        <h2 class="sub__list__title">Sub list section</h2>
+                        <div class="vertical__line yelow__bgc"></div>
+                        <p class="sub__list__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                        <div class="d-flex">
+                            <div class="sub__icon">
+                                <img src="/images/icone-sub-line-1.png" alt="">
+                            </div>
+                            <div class="sub__description">
+                                <h3 class="sub__icon__title">Title</h3>
+                                <p class="sub__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                        </div>
+                        <div class="icon__and__description d-flex">
+                            <div class="sub__icon">
+                                <img src="/images/icone-sub-line-2.png" alt="">
+                            </div>
+                            <div class="sub__description">
+                                <h3 class="sub__icon__title">Title</h3>
+                                <p class="sub__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="standard__picture" id="standard__picture">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mr-auto">
+                    <h2 class="standard__picture__title">Standard Picture Section</h2>
+                    <div class="vertical__line yelow__bgc"></div>
+                    <p class="standard__picture__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+            </div>
+            <div class="col-lg-6 ml-auto">
+                <div class="standard__picture__img__right"><img src="/images/image_left_sub_list_u260.png" class="standard__picture__img" alt=""></div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="our__process" id="our__process">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="hat">
+                    <h1 class="title__section">STYLISH AXURE DESIGN</h1>
+                    <div class="vertical__line yelow__bgc mx-auto"></div>
+                    <p class="subtitle__section">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                </div>
+            </div>
+                <div class="col-lg-4 text-center">
+                    <div class="dfsgb">
+                        <img src="/images/icon__1__our__proces.png" class="our__process__icon__img" alt="">
+                        <h2 class="our__process__icon__title">Thoughtful Design</h2>
+                        <p class="our__process__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="dfsgb">
+                        <img src="/images/icon__2__our__proces.png" class="our__process__icon__img" alt="">
+                        <h2 class="our__process__icon__title">Well Crafted</h2>
+                        <p class="our__process__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="dfsgb">
+                        <img src="/images/icon__3__our__proces.png" class="our__process__icon__img" alt="">
+                        <h2 class="our__process__icon__title">Easy to Customize</h2>
+                        <p class="our__process__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="hat">
+                    <h1 class="title__section">STYLISH AXURE DESIGN</h1>
+                    <div class="vertical__line yelow__bgc mx-auto"></div>
+                    <p class="subtitle__section">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="offer">
+                    <p class="offer__nume">Basic</p>
+                </div>
+                <div class="offer__price">
+                    <p class="offer__number"><span class="value">$</span><span class="price">0</span></p>
+                    <p class="offer__subNumber">Free for Life</p>
+                </div>
+                <div class="yelow__line"></div>
+                <div class="offer__description"><p>1 gb of space</p></div>
+                <div class="offer__description"><p>10 gb of bandwidth</p></div>
+                <div class="offer__description"><p>3 websites</p></div>
+                <div class="offer__description"><p>Basic Customization</p></div>
+                <div class="offer__description"><p>wordpress integration</p></div>
+                <div class="offer__description offer__description__bottom"><p>email support</p></div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="offer offer__mt">
+                    <p class="offer__nume">Professional</p>
+                </div>
+                <div class="offer__price">
+                    <p class="offer__number"><span class="value">$</span><span class="price">19</span></p>
+                    <p class="offer__subNumber">Monthly Payment</p>
+                </div>
+                <div class="yelow__line__description"><p>OUR MOST POPULAR</p></div>
+                <div class="offer__description"><p>5 gb of space</p></div>
+                <div class="offer__description"><p>50 gb of bandwidth</p></div>
+                <div class="offer__description"><p>12 websites</p></div>
+                <div class="offer__description"><p>Advanced Customization</p></div>
+                <div class="offer__description"><p>wordpress integration</p></div>
+                <div class="offer__description offer__description__bottom"><p>email support</p></div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="offer">
+                    <p class="offer__nume">Enterprise</p>
+                </div>
+                <div class="offer__price">
+                    <p class="offer__number"><span class="value">$</span><span class="price">70</span></p>
+                    <p class="offer__subNumber">Monthly Payment</p>
+                </div>
+                <div class="yelow__line"></div>
+                <div class="offer__description"><p>Unlimited space</p></div>
+                <div class="offer__description"><p>unlimited bandwidth</p></div>
+                <div class="offer__description"><p>100 websites</p></div>
+                <div class="offer__description"><p>Basic Customization</p></div>
+                <div class="offer__description"><p>wordpress integration</p></div>
+                <div class="offer__description offer__description__bottom"><p>24/7 customer support</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="hat">
+                    <h1 class="title__section">STYLISH AXURE DESIGN</h1>
+                    <div class="vertical__line yelow__bgc mx-auto"></div>
+                    <p class="subtitle__section">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                </div>
+            </div>
+            <div class="reviews__content">
+                <div class="col-lg-3">
+                    <div class="comment__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p></div>
+                    <div class="comment__author">
+                        <div><img src="../images/rewiews__img__author.png" alt=""></div>
+                        <div>
+                            <p class="reviews__name__authot">Jeremy H.</p>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="comment__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p></div>
+                    <div class="comment__author">
+                        <div><img src="../images/rewiews__img__author.png" alt=""></div>
+                        <div>
+                            <p class="reviews__name__authot">John S.</p>
+                            <p>Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="comment__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p></div>
+                    <div class="comment__author">
+                        <div><img src="../images/rewiews__img__author.png" alt=""></div>
+                        <div>
+                            <p class="reviews__name__authot">Susan W.</p>
+                            <p>Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="custom__design" id="custom__design">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="hat">
+                    <h1 class="title__section">STYLISH AXURE DESIGN</h1>
+                    <div class="vertical__line mx-auto"></div>
+                    <p class="subtitle__section">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                    <button class="btn__transparet">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="hat">
+                    <h1 class="title__section">CONTACT US</h1>
+                    <div class="vertical__line yelow__bgc mx-auto"></div>
+                    <p class="subtitle__section">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <form action="">
+                    <div class="d-flex">
+                        <div class="col-lg-6">
+                            <input type="text" class="contact__input contact__input__name " placeholder="Name">
+                            <input type="email" class="contact__input contact__input__email" placeholder="Email">
+                            <input type="text" class="contact__input contact__input__subject" placeholder="Subject">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="contact__input__right contact__input__message" placeholder="Message">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-lg-12 m-0">
+                            <div class="text-center"><button class="btn__color">Send Message</button></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__icon__link">
+                        <a href="#"><img src="/images/footer/footer__icon__1.png" class="footer__link" alt=""></a>
+                        <a href="#"><img src="/images/footer/footer__icon__2.png" class="footer__link" alt=""></a>
+                        <a href="#"><img src="/images/footer/footer__icon__3.png" class="footer__link" alt=""></a>
+                        <a href="#"><img src="/images/footer/footer__icon__4.png" class="footer__link" alt=""></a>
+                        <a href="#"><img src="/images/footer/footer__icon__5.png" class="footer__link" alt=""></a>
+                        <a href="#"><img src="/images/footer/footer__icon__6.png" class="footer__link" alt=""></a>
+                        <a href="#"><img src="/images/footer/footer__icon__7.png" class="footer__link mr-0" alt=""></a>
+                </div>
+
+                <div class="sub__icon__footer">
+                    <p>© made by Toma Andrei in 2020</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+
+</body>
 </html>
