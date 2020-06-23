@@ -247,9 +247,12 @@ a:hover{
     padding: 35px 0 14px 14px!important;
     outline: none;
 }
-.header__content__form div{
+.content__form{
     background-color: #fff;
     padding: 0 45px;
+}
+.form__password{
+    padding-bottom: 50px!important;
 }
 .form__label{
     background-color: #f5f5f5;
@@ -330,13 +333,15 @@ a:hover{
     justify-content: space-between;
     align-items: center;
 }
-.social__media__icon .social__media__link{
+.social__media__link{
     filter: drop-shadow(0px 7px 3px #000000);
     opacity: .5;
 }
-.social__media__icon .social__media__link:hover{
+.social__media__link:hover{
     filter: drop-shadow(0px 15px 3px #000000);
     opacity: 1;
+    /* margin-bottom: 15px; */
+    transition: .2s ease-in-out;
 }
 .social__media__icon .fa-facebook-f{
     color: #3b5998;
@@ -383,6 +388,17 @@ a:hover{
 @media(max-width: 991px){
     .social__media__link{
         margin-left: 0;
+    }
+    .social__media__subtitle{
+        padding-bottom: 0;
+    }
+    .social__media__icon{
+        margin: 10px 0;
+    }
+}
+@media(max-width: 575px){
+    .social__media__link{
+        font-size: 40px;
     }
 }
 /* === / social__media === */

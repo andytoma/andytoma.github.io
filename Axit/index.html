@@ -59,13 +59,56 @@
                             <a href="#" class="button__animate">Download</a>
                     </div>
                     <div class="col-lg-5 ml-auto">
-                        <form class="header__content__form">
+                        <!-- <form class="header__content__form">
                             <label for="name" class="form__label">Try Your <span class="yelow">FREE</span> Trial Today</label>
                             <div><input type="name" class="form__name input__text" id="name" placeholder="Name"></div>
                             <div><input type="email" class="form__email input__text" placeholder="Email"></div>
                             <div class="pasword__conteiner"><input type="password" class="form__password input__text" placeholder="Password"> </div>
                             <button type="submit" class="form__btn">Submit</button>
-                        </form>
+                        </form> -->
+
+<!-- ---------------------------------------------------------------------------------- -->
+
+<form class="needs-validation header__content__form" novalidate>
+    <label for="name" class="form__label">Try Your <span class="yelow">FREE</span> Trial Today</label>
+    <div>
+      <div class="content__form">
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please enter your name.
+          </div>
+      </div>
+      <div class="content__form">
+        <input type="email" class="form-control" id="email" placeholder="email" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please enter your email.
+      </div>
+      </div>
+      <div class="content__form pasword__conteiner">
+        <input type="password" class="form-control" id="password" placeholder="password" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please enter your password.
+      </div>
+      </div>
+    </div>
+    <button class="form__btn" type="submit">Submit form</button>
+  </form>
+  
+
+
+<!-- ------------------------------------------------------------------------------------------ -->
+
+
+
                     </div>
                 </div>
             </div>
@@ -359,7 +402,7 @@
                 </div>
             </div>
             <div class="col-lg-12">
-                <form action="">
+                <!-- <form>
                     <div class="form__container">
                         <div class="col-lg-6">
                             <input type="text" class="contact__input contact__input__name " placeholder="Name">
@@ -377,7 +420,65 @@
                             </div>
                         </div>
                     </div>
+                </form> -->
+                
+                <!-- ---------------------------------------------------------------------------------- -->
+
+                <form class="needs-validation " novalidate>
+                    <div class="form__container">
+                        <div class="col-lg-6">
+                            <div class="content__form">
+                                <input type="text" class="contact__input contact__input__name" id="validationCustom01" placeholder="Name" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                  </div>
+                              </div>
+                              <div class="content__form">
+                                <input type="email" class="contact__input contact__input__email" id="email" placeholder="email" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your email.
+                              </div>
+                              </div>
+                              <div class="content__form">
+                                <input type="text" class="contact__input contact__input__subject" id="Subject" placeholder="Subject" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your subject.
+                              </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content__form">
+                                <input type="text" class="contact__input__right contact__input__message" id="message" placeholder="Message" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                              </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-lg-12 m-0">
+                            <div class="text-center">
+                                <button class="button">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
+
+  
+
+                <!-- ---------------------------------------------------------------------------------- -->
             </div>
         </div>
     </div>
