@@ -1,0 +1,16 @@
+{
+  "name": "snowbord",
+  "version": "1.0.0",
+  "description": "My project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "Andy",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1"
+  }
+}
