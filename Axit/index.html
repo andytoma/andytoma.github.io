@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
@@ -16,58 +15,86 @@
 </head>
 <body>
 
-<header class="header" id="header">
-    <div class="main__header">
+<header class="header">
+    <div class="header__nav">
         <div class="container">
-
-            <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="#">
-                    <img src="/images/Logo.png" class="logo" alt="logo" />
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img src="images/Logo.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="border__burger"> <i class="fa fa-bars burger__header" aria-hidden="true"></i>
-                    </div>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto"> 
-                    <li class="nav-item">
-                        <a class="nav-link nav-item-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-item-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-item-link" href="#">Pricing</a>
+                 <div class="header__burger">
+                     <div class="borger__span"><span></span></div>
+                 </div>
+                 <nav class="header__menu">
+                     <ul class="header__list">
+                        <li>
+                            <a href="#" class="header__link">Features</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link nav-item-link" href="#">Reviews</a>
+                        <li>
+                            <a href="#" class="header__link">About</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link nav-item-link" href="#">Contact</a>
+                        <li>
+                            <a href="#" class="header__link">Pricing</a>
                         </li>
-                    </ul>
-                </div>
-                </nav>
+                        <li>
+                            <a href="#" class="header__link">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Contact</a>
+                        </li>
+                     </ul>
+                 </nav>
+            </div>
         </div>
     </div>
     <div class="header__content">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6">
-                    <img src="/images/logo_content.png" class="logo__content" alt="">    
-                    <h1 class="header__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                    <div class="vertical__line"></div>
-                    <p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-                    <button class="btn__transparet">Download</button>
-                </div>
-                <div class="col-lg-5 ml-auto">
-                    <form class="header__content__form">
-                        <label for="name" class="form__label">Try Your <span class="yelow">FREE</span> Trial Today</label>
-                        <div><input type="name" class="form__name input__text" id="name" placeholder="Name"></div>
-                        <div><input type="email" class="form__email input__text" placeholder="Email"></div>
-                        <div class="pasword__conteiner"><input type="password" class="form__password input__text" placeholder="Password"> </div>
-                        <button type="submit" class="form__btn">Submit</button>
-                    </form>
+        <div class="parallax-window" data-parallax="scroll" data-android-fix="true" data-image-src="images/Slice_7.png">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <img src="images/logo_content.png" class="logo__content" alt="">    
+                        <h1 class="header__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                        <div class="vertical__line"></div>
+                        <p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                            <a href="#" class="button__animate">Download</a>
+                    </div>
+                    <div class="col-lg-5 ml-auto">
+
+                        <form class="needs-validation header__content__form" novalidate>
+                            <label for="name" class="form__label">Try Your <span class="yelow">FREE</span> Trial Today</label>
+                            <div>
+                            <div class="content__form">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="content__form">
+                                <input type="email" class="form-control" id="email" placeholder="email" required>
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your email.
+                            </div>
+                            </div>
+                            <div class="content__form pasword__conteiner">
+                                <input type="password" class="form-control" id="password" placeholder="password" required>
+                                <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your password.
+                            </div>
+                            </div>
+                            </div>
+                            <button class="form__btn" type="submit">Submit form</button>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,13 +109,13 @@
                 <p class="social__media__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet.</p>
             </div>
                 <div class="col-lg-7 social__media__icon">
-                        <a href="#"><img src="/images/social-modia/SM__icon__1.png" class="social__media__link first__SML" alt=""></a>
-                        <a href="#"><img src="/images/social-modia/SM__icon__2.png" class="social__media__link" alt=""></a>
-                        <a href="#"><img src="/images/social-modia/SM__icon__3.png" class="social__media__link" alt=""></a>
-                        <a href="#"><img src="/images/social-modia/SM__icon__4.png" class="social__media__link" alt=""></a>
-                        <a href="#"><img src="/images/social-modia/SM__icon__5.png" class="social__media__link" alt=""></a>
-                        <a href="#"><img src="/images/social-modia/SM__icon__6.png" class="social__media__link" alt=""></a>
-                        <a href="#"><img src="/images/social-modia/SM__icon__7.png" class="social__media__link" alt=""></a>
+                        <a href="#"class="social__media__link link__facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"class="social__media__link link__twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#"class="social__media__link link__google"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"class="social__media__link link__pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"class="social__media__link link__instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#"class="social__media__link link__stumbleupon"><i class="fab fa-stumbleupon"></i></a>
+                        <a href="#"class="social__media__link link__rss"><i class="fas fa-rss"></i></a>
                 </div>
         </div>
     </div>
@@ -110,29 +137,28 @@
 
             <div class="col-lg-6">
                     <div class="tab-content tabs__content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        
-                            <h2 class="tabs__content__title">Tabs with Lorem ipsum dolor sit amet.</h2>  
-                            <p class="tabs__content__subtitle tabs__content__subtitle__pading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra dis parturient montes.</p>
-                            <p class="tabs__content__subtitle ">Lorem ipsum dolor sit amet, consectet bibendum laoreet.</p>
-                            <button class="btn__color">Download</button>
-                        
+                        <div class="tab-pane  fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <h2 class="tabs__content__title">Tabs with Lorem ipsum dolor sit amet.</h2>  
+                                <p class="tabs__content__subtitle tabs__content__subtitle__pading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra dis parturient montes.</p>
+                                <p class="tabs__content__subtitle ">Lorem ipsum dolor sit amet, consectet bibendum laoreet.</p>
+                                <button class="button">Download</button>
+                                <img src="images/tab__image__right.png" class="tabs__img mr-auto" alt="">
                         </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                                   
                             <h2 class="tabs__content__title">Tabs with Lorem, ipsum.</h2>  
                             <p class="tabs__content__subtitle tabs__content__subtitle__pading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacis natoque penatibus et magnis dis parturient montes.</p>
                             <p class="tabs__content__subtitle">Lorem ipsum dolor adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                            <button class="btn__color">Download</button>
-                        
+                            <button class="button">Download</button>
+                            <img src="images/tab__image__right.png" class="tabs__img" alt="">
                         </div>
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                                   
                             <h2 class="tabs__content__title">Tabs with Lorem ipsum dolor sit.</h2>  
                             <p class="tabs__content__subtitle tabs__content__subtitle__pading">justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                             <p class="tabs__content__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod</p>
-                            <button class="btn__color">Download</button>
-                        
+                            <button class="button">Download</button>
+                            <img src="images/tab__image__right.png" class="tabs__img" alt="">
                         </div>
                     </div>
             </div>
@@ -145,7 +171,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                  <div class="sub__list__img__left"><img src="/images/image_left_sub_list_u260.png" class="sub__left__img" alt=""></div>
+                  <div class="sub__list__img__left"><img src="images/image_left_sub_list_u260.png" class="sub__left__img" alt=""></div>
                 </div>
                 <div class="col-lg-5 ml-auto">
                         <h2 class="sub__list__title">Sub list section</h2>
@@ -153,7 +179,7 @@
                         <p class="sub__list__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
                         <div class="d-flex">
                             <div class="sub__icon">
-                                <img src="/images/icone-sub-line-1.png" alt="">
+                                <img src="images/icone-sub-line-1.png" alt="">
                             </div>
                             <div class="sub__description">
                                 <h3 class="sub__icon__title">Title</h3>
@@ -162,7 +188,7 @@
                         </div>
                         <div class="icon__and__description d-flex">
                             <div class="sub__icon">
-                                <img src="/images/icone-sub-line-2.png" alt="">
+                                <img src="images/icone-sub-line-2.png" alt="">
                             </div>
                             <div class="sub__description">
                                 <h3 class="sub__icon__title">Title</h3>
@@ -183,7 +209,7 @@
                     <p class="standard__picture__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
             </div>
             <div class="col-lg-6 ml-auto">
-                <div class="standard__picture__img__right"><img src="/images/image_left_sub_list_u260.png" class="standard__picture__img" alt=""></div>
+                <div class="standard__picture__img__right"><img src="images/image_left_sub_list_u260.png" class="standard__picture__img" alt=""></div>
               </div>
         </div>
     </div>
@@ -201,21 +227,21 @@
             </div>
                 <div class="col-lg-4 text-center">
                     <div class="dfsgb">
-                        <img src="/images/icon__1__our__proces.png" class="our__process__icon__img" alt="">
+                        <img src="images/icon__1__our__proces.png" class="our__process__icon__img" alt="">
                         <h2 class="our__process__icon__title">Thoughtful Design</h2>
                         <p class="our__process__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div class="dfsgb">
-                        <img src="/images/icon__2__our__proces.png" class="our__process__icon__img" alt="">
+                        <img src="images/icon__2__our__proces.png" class="our__process__icon__img" alt="">
                         <h2 class="our__process__icon__title">Well Crafted</h2>
                         <p class="our__process__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div class="dfsgb">
-                        <img src="/images/icon__3__our__proces.png" class="our__process__icon__img" alt="">
+                        <img src="images/icon__3__our__proces.png" class="our__process__icon__img" alt="">
                         <h2 class="our__process__icon__title">Easy to Customize</h2>
                         <p class="our__process__icon__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
                     </div>
@@ -301,7 +327,7 @@
                 <div class="col-lg-3">
                     <div class="comment__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p></div>
                     <div class="comment__author">
-                        <div><img src="../images/rewiews__img__author.png" alt=""></div>
+                        <div><img src="images/rewiews__img__author.png" alt=""></div>
                         <div>
                             <p class="reviews__name__authot">Jeremy H.</p>
                             <p>Manager</p>
@@ -311,7 +337,7 @@
                 <div class="col-lg-3">
                     <div class="comment__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p></div>
                     <div class="comment__author">
-                        <div><img src="../images/rewiews__img__author.png" alt=""></div>
+                        <div><img src="images/rewiews__img__author.png" alt=""></div>
                         <div>
                             <p class="reviews__name__authot">John S.</p>
                             <p>Freelancer</p>
@@ -321,7 +347,7 @@
                 <div class="col-lg-3">
                     <div class="comment__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p></div>
                     <div class="comment__author">
-                        <div><img src="../images/rewiews__img__author.png" alt=""></div>
+                        <div><img src="images/rewiews__img__author.png" alt=""></div>
                         <div>
                             <p class="reviews__name__authot">Susan W.</p>
                             <p>Photographer</p>
@@ -334,14 +360,16 @@
 </section>
 
 <section class="custom__design" id="custom__design">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="hat">
-                    <h1 class="title__section">STYLISH AXURE DESIGN</h1>
-                    <div class="vertical__line mx-auto"></div>
-                    <p class="subtitle__section">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-                    <button class="btn__transparet">Download</button>
+    <div class="parallax-window" data-parallax="scroll" data-android-fix="true" data-image-src="images/custom__desigb__img.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="hat">
+                        <h1 class="title__section">STYLISH AXURE DESIGN</h1>
+                        <div class="vertical__line mx-auto"></div>
+                        <p class="subtitle__section">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                            <a href="#" class="button__animate">Download</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -359,20 +387,54 @@
                 </div>
             </div>
             <div class="col-lg-12">
-                <form action="">
-                    <div class="d-flex">
+                <form class="needs-validation " novalidate>
+                    <div class="form__container">
                         <div class="col-lg-6">
-                            <input type="text" class="contact__input contact__input__name " placeholder="Name">
-                            <input type="email" class="contact__input contact__input__email" placeholder="Email">
-                            <input type="text" class="contact__input contact__input__subject" placeholder="Subject">
+                            <div class="content__form">
+                                <input type="text" class="contact__input contact__input__name" id="validationCustom01" placeholder="Name" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                  </div>
+                              </div>
+                              <div class="content__form">
+                                <input type="email" class="contact__input contact__input__email" id="email" placeholder="email" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your email.
+                              </div>
+                              </div>
+                              <div class="content__form">
+                                <input type="text" class="contact__input contact__input__subject" id="Subject" placeholder="Subject" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your subject.
+                              </div>
+                              </div>
                         </div>
                         <div class="col-lg-6">
-                            <input type="text" class="contact__input__right contact__input__message" placeholder="Message">
+                            <div class="content__form">
+                                <input type="text" class="contact__input__right contact__input__message" id="message" placeholder="Message" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                              </div>
+                              </div>
                         </div>
                     </div>
                     <div>
                         <div class="col-lg-12 m-0">
-                            <div class="text-center"><button class="btn__color">Send Message</button></div>
+                            <div class="text-center">
+                                <button class="button">Send Message</button>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -386,13 +448,13 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="footer__icon__link">
-                        <a href="#"><img src="/images/footer/footer__icon__1.png" class="footer__link" alt=""></a>
-                        <a href="#"><img src="/images/footer/footer__icon__2.png" class="footer__link" alt=""></a>
-                        <a href="#"><img src="/images/footer/footer__icon__3.png" class="footer__link" alt=""></a>
-                        <a href="#"><img src="/images/footer/footer__icon__4.png" class="footer__link" alt=""></a>
-                        <a href="#"><img src="/images/footer/footer__icon__5.png" class="footer__link" alt=""></a>
-                        <a href="#"><img src="/images/footer/footer__icon__6.png" class="footer__link" alt=""></a>
-                        <a href="#"><img src="/images/footer/footer__icon__7.png" class="footer__link mr-0" alt=""></a>
+                        <a href="#"class="footer__link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"class="footer__link"><i class="fab fa-twitter"></i></a>
+                        <a href="#"class="footer__link"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"class="footer__link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"class="footer__link"><i class="fab fa-instagram"></i></a>
+                        <a href="#"class="footer__link"><i class="fab fa-stumbleupon"></i></a>
+                        <a href="#"class="footer__link mr-0"><i class="fas fa-rss"></i></a>
                 </div>
 
                 <div class="sub__icon__footer">
@@ -404,10 +466,13 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
